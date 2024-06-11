@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fd70f84247875a0cdb94773f6fb483a0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fd70f84247875a0cdb94773f6fb483a0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fd70f84247875a0cdb94773f6fb483a0 = L.map(
+                "map_fd70f84247875a0cdb94773f6fb483a0",
+                {
+                    center: [47.3242656, 38.7756461],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    attributionControl: 0,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1b7ff2f04202d8cde0dafe30876b66f1 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+            var marker_16353924158b896c56f6997c01698b6e = L.marker(
+                [47.3242656, 38.7756461],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+            var icon_5001e12815532856ab47cc13f4470cd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_16353924158b896c56f6997c01698b6e.setIcon(icon_5001e12815532856ab47cc13f4470cd2);
+        
+    
+        var popup_1793498fa35de872f8bb8da2e25597e9 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_af3d46a1f5a60a6b5498c97714442473 = $(`<div id="html_af3d46a1f5a60a6b5498c97714442473" style="width: 100.0%; height: 100.0%;"><h3>Код ошибки приёма:</h3> <h4>2.0</h4><br>                 <h3>Сила сигнала:</h3> <h4>135.0</h4><br>                 <h3>Уровень удалённых шумов:</h3> <h4>47.0</h4><br>                 <h3>Координаты:</h3> <h4>473242656.0, 387756461.0</h4>                 </div>`)[0];
+                popup_1793498fa35de872f8bb8da2e25597e9.setContent(html_af3d46a1f5a60a6b5498c97714442473);
+            
+        
+
+        marker_16353924158b896c56f6997c01698b6e.bindPopup(popup_1793498fa35de872f8bb8da2e25597e9)
+        ;
+
+        
+    
+    
+            var marker_f5f5753e3c847a8c0f2ed5da831860f8 = L.marker(
+                [47.3242656, 38.7756461],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_a9fa86c4a4e7185c17b07e02499f193c = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_f47035f2fdebcf3092dd7b675c1b4d4b = $(`<div id="html_f47035f2fdebcf3092dd7b675c1b4d4b" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473242656.0, 387756461.0</h4></div>`)[0];
+                popup_a9fa86c4a4e7185c17b07e02499f193c.setContent(html_f47035f2fdebcf3092dd7b675c1b4d4b);
+            
+        
+
+        marker_f5f5753e3c847a8c0f2ed5da831860f8.bindPopup(popup_a9fa86c4a4e7185c17b07e02499f193c)
+        ;
+
+        
+    
+    
+            var marker_f8f1ca3fd55cabc71d6be63423983199 = L.marker(
+                [47.3242656, 38.7756461],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+            var icon_e496d5fc3cca6ffec7036584a4831e55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f8f1ca3fd55cabc71d6be63423983199.setIcon(icon_e496d5fc3cca6ffec7036584a4831e55);
+        
+    
+        var popup_83220879fc9ebf52a7ec59f093938972 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_d0cc91b3c5bbfb94b82f790a75a8a1fe = $(`<div id="html_d0cc91b3c5bbfb94b82f790a75a8a1fe" style="width: 100.0%; height: 100.0%;"><h3>Код ошибки приёма:</h3> <h4>2.0</h4><br>                 <h3>Сила сигнала:</h3> <h4>135.0</h4><br>                 <h3>Уровень удалённых шумов:</h3> <h4>55.0</h4><br>                 <h3>Координаты:</h3> <h4>473242656.0, 387756461.0</h4>                 </div>`)[0];
+                popup_83220879fc9ebf52a7ec59f093938972.setContent(html_d0cc91b3c5bbfb94b82f790a75a8a1fe);
+            
+        
+
+        marker_f8f1ca3fd55cabc71d6be63423983199.bindPopup(popup_83220879fc9ebf52a7ec59f093938972)
+        ;
+
+        
+    
+    
+            var marker_b077d51e64fd6fe8a75e39dbd44315e8 = L.marker(
+                [47.3242656, 38.7756461],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_a1eada1350b9a6637443fdacbc341bd2 = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_a163ea6274f96a238fd193c416c3c7b0 = $(`<div id="html_a163ea6274f96a238fd193c416c3c7b0" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473242656.0, 387756461.0</h4></div>`)[0];
+                popup_a1eada1350b9a6637443fdacbc341bd2.setContent(html_a163ea6274f96a238fd193c416c3c7b0);
+            
+        
+
+        marker_b077d51e64fd6fe8a75e39dbd44315e8.bindPopup(popup_a1eada1350b9a6637443fdacbc341bd2)
+        ;
+
+        
+    
+    
+            var marker_cc5910aa370153d7be24096b6d6db342 = L.marker(
+                [47.3242655, 38.7756462],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+            var icon_5855f5cd6d27acef3da0c63ba95101f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cc5910aa370153d7be24096b6d6db342.setIcon(icon_5855f5cd6d27acef3da0c63ba95101f1);
+        
+    
+        var popup_ba81335e85ddbaacc02e413daa9be492 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_8fc02b25ea708b810fca72960833c0ac = $(`<div id="html_8fc02b25ea708b810fca72960833c0ac" style="width: 100.0%; height: 100.0%;"><h3>Код ошибки приёма:</h3> <h4>2.0</h4><br>                 <h3>Сила сигнала:</h3> <h4>135.0</h4><br>                 <h3>Уровень удалённых шумов:</h3> <h4>56.0</h4><br>                 <h3>Координаты:</h3> <h4>473242655.0, 387756462.0</h4>                 </div>`)[0];
+                popup_ba81335e85ddbaacc02e413daa9be492.setContent(html_8fc02b25ea708b810fca72960833c0ac);
+            
+        
+
+        marker_cc5910aa370153d7be24096b6d6db342.bindPopup(popup_ba81335e85ddbaacc02e413daa9be492)
+        ;
+
+        
+    
+    
+            var marker_45b17cf7269d32b7b2af90a3aa3ebbac = L.marker(
+                [47.3242655, 38.7756461],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_42c363246adaa49b74eed88812e372a5 = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_c9984dec575b133c581d88641fada15a = $(`<div id="html_c9984dec575b133c581d88641fada15a" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473242655.0, 387756461.0</h4></div>`)[0];
+                popup_42c363246adaa49b74eed88812e372a5.setContent(html_c9984dec575b133c581d88641fada15a);
+            
+        
+
+        marker_45b17cf7269d32b7b2af90a3aa3ebbac.bindPopup(popup_42c363246adaa49b74eed88812e372a5)
+        ;
+
+        
+    
+    
+            var marker_eb1bf40a010f9adbb0a9492bd30bfb06 = L.marker(
+                [47.3242654, 38.7756464],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+            var icon_9cf904484e372ab78b270080f04e6387 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eb1bf40a010f9adbb0a9492bd30bfb06.setIcon(icon_9cf904484e372ab78b270080f04e6387);
+        
+    
+        var popup_ca074d9ef5bc452cca69fd29357489d6 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_309e9fdd2bc4dce0aa63572a380b925a = $(`<div id="html_309e9fdd2bc4dce0aa63572a380b925a" style="width: 100.0%; height: 100.0%;"><h3>Код ошибки приёма:</h3> <h4>2.0</h4><br>                 <h3>Сила сигнала:</h3> <h4>135.0</h4><br>                 <h3>Уровень удалённых шумов:</h3> <h4>59.0</h4><br>                 <h3>Координаты:</h3> <h4>473242654.0, 387756464.0</h4>                 </div>`)[0];
+                popup_ca074d9ef5bc452cca69fd29357489d6.setContent(html_309e9fdd2bc4dce0aa63572a380b925a);
+            
+        
+
+        marker_eb1bf40a010f9adbb0a9492bd30bfb06.bindPopup(popup_ca074d9ef5bc452cca69fd29357489d6)
+        ;
+
+        
+    
+    
+            var marker_e8ab4822b9182985577805dcf6cdfb9c = L.marker(
+                [47.3242655, 38.7756462],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_28c8e5ec640f2516ba41396294845320 = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_4e29fa54bebb47000a13671851766332 = $(`<div id="html_4e29fa54bebb47000a13671851766332" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473242655.0, 387756462.0</h4></div>`)[0];
+                popup_28c8e5ec640f2516ba41396294845320.setContent(html_4e29fa54bebb47000a13671851766332);
+            
+        
+
+        marker_e8ab4822b9182985577805dcf6cdfb9c.bindPopup(popup_28c8e5ec640f2516ba41396294845320)
+        ;
+
+        
+    
+    
+            var marker_0b42a7e3e949451b93618c88ccc760c4 = L.marker(
+                [47.3242653, 38.7756462],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+            var icon_abd5598b2290fb8719801473c2fca1a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0b42a7e3e949451b93618c88ccc760c4.setIcon(icon_abd5598b2290fb8719801473c2fca1a9);
+        
+    
+        var popup_83949c239942e014168c496a61ec318f = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_1ce0364f1edfffe51f498327f06c3797 = $(`<div id="html_1ce0364f1edfffe51f498327f06c3797" style="width: 100.0%; height: 100.0%;"><h3>Код ошибки приёма:</h3> <h4>2.0</h4><br>                 <h3>Сила сигнала:</h3> <h4>128.0</h4><br>                 <h3>Уровень удалённых шумов:</h3> <h4>53.0</h4><br>                 <h3>Координаты:</h3> <h4>473242653.0, 387756462.0</h4>                 </div>`)[0];
+                popup_83949c239942e014168c496a61ec318f.setContent(html_1ce0364f1edfffe51f498327f06c3797);
+            
+        
+
+        marker_0b42a7e3e949451b93618c88ccc760c4.bindPopup(popup_83949c239942e014168c496a61ec318f)
+        ;
+
+        
+    
+    
+            var marker_c714701d85935e9745baca18a511883a = L.marker(
+                [47.3242655, 38.7756463],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_5e3feed6dc2f43c304f40b4363e52205 = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_9819e9da8771d0070b5aef82d04c778e = $(`<div id="html_9819e9da8771d0070b5aef82d04c778e" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473242655.0, 387756463.0</h4></div>`)[0];
+                popup_5e3feed6dc2f43c304f40b4363e52205.setContent(html_9819e9da8771d0070b5aef82d04c778e);
+            
+        
+
+        marker_c714701d85935e9745baca18a511883a.bindPopup(popup_5e3feed6dc2f43c304f40b4363e52205)
+        ;
+
+        
+    
+    
+            var marker_21da24b8b3fa3f44d7c01eb05fb7678d = L.marker(
+                [47.3242664, 38.7756435],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+            var icon_13478684502964f59b98692198e27077 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_21da24b8b3fa3f44d7c01eb05fb7678d.setIcon(icon_13478684502964f59b98692198e27077);
+        
+    
+        var popup_5d3c8d5b20eeac68281f6986738ccc0d = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_11e4903ebfa69164652a5306e1bb72c1 = $(`<div id="html_11e4903ebfa69164652a5306e1bb72c1" style="width: 100.0%; height: 100.0%;"><h3>Код ошибки приёма:</h3> <h4>2.0</h4><br>                 <h3>Сила сигнала:</h3> <h4>134.0</h4><br>                 <h3>Уровень удалённых шумов:</h3> <h4>56.0</h4><br>                 <h3>Координаты:</h3> <h4>473242664.0, 387756435.0</h4>                 </div>`)[0];
+                popup_5d3c8d5b20eeac68281f6986738ccc0d.setContent(html_11e4903ebfa69164652a5306e1bb72c1);
+            
+        
+
+        marker_21da24b8b3fa3f44d7c01eb05fb7678d.bindPopup(popup_5d3c8d5b20eeac68281f6986738ccc0d)
+        ;
+
+        
+    
+    
+            var marker_1e53e662420e09a510d5a19423f7aa31 = L.marker(
+                [47.3242654, 38.7756464],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_1375eb5780d55ff9506a786c64fe84e8 = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_506925d24c1bf346860a14a58e1381c2 = $(`<div id="html_506925d24c1bf346860a14a58e1381c2" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473242654.0, 387756464.0</h4></div>`)[0];
+                popup_1375eb5780d55ff9506a786c64fe84e8.setContent(html_506925d24c1bf346860a14a58e1381c2);
+            
+        
+
+        marker_1e53e662420e09a510d5a19423f7aa31.bindPopup(popup_1375eb5780d55ff9506a786c64fe84e8)
+        ;
+
+        
+    
+    
+            var marker_df595ad1f7307c33819256b47a55b05d = L.marker(
+                [47.3242681, 38.7756403],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+            var icon_26894f2257d267398cefa94ada1ef095 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_df595ad1f7307c33819256b47a55b05d.setIcon(icon_26894f2257d267398cefa94ada1ef095);
+        
+    
+        var popup_c66b2d329f1c2e0efe9da9d8c0c984df = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_66ef09ed1c2a5f108b0c13477777bb18 = $(`<div id="html_66ef09ed1c2a5f108b0c13477777bb18" style="width: 100.0%; height: 100.0%;"><h3>Код ошибки приёма:</h3> <h4>2.0</h4><br>                 <h3>Сила сигнала:</h3> <h4>138.0</h4><br>                 <h3>Уровень удалённых шумов:</h3> <h4>54.0</h4><br>                 <h3>Координаты:</h3> <h4>473242681.0, 387756403.0</h4>                 </div>`)[0];
+                popup_c66b2d329f1c2e0efe9da9d8c0c984df.setContent(html_66ef09ed1c2a5f108b0c13477777bb18);
+            
+        
+
+        marker_df595ad1f7307c33819256b47a55b05d.bindPopup(popup_c66b2d329f1c2e0efe9da9d8c0c984df)
+        ;
+
+        
+    
+    
+            var marker_56189e2415fc16b7e2bab460e1d06b00 = L.marker(
+                [47.3242654, 38.7756464],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_423fa72e7937e2619b5edb4bbd3b355e = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_9d24b067ba379e92ccb68b59fe9639b2 = $(`<div id="html_9d24b067ba379e92ccb68b59fe9639b2" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473242654.0, 387756464.0</h4></div>`)[0];
+                popup_423fa72e7937e2619b5edb4bbd3b355e.setContent(html_9d24b067ba379e92ccb68b59fe9639b2);
+            
+        
+
+        marker_56189e2415fc16b7e2bab460e1d06b00.bindPopup(popup_423fa72e7937e2619b5edb4bbd3b355e)
+        ;
+
+        
+    
+    
+            var marker_7bc049bfb4e4bd155dde705aca399167 = L.marker(
+                [47.3242687, 38.775641],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+            var icon_6dcd56e2b6b5d421fcb3d84a85e45306 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7bc049bfb4e4bd155dde705aca399167.setIcon(icon_6dcd56e2b6b5d421fcb3d84a85e45306);
+        
+    
+        var popup_f6e3ccb6253200b31e1816085e848b47 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_73adfa061b7ef192585609037d44dc3b = $(`<div id="html_73adfa061b7ef192585609037d44dc3b" style="width: 100.0%; height: 100.0%;"><h3>Код ошибки приёма:</h3> <h4>2.0</h4><br>                 <h3>Сила сигнала:</h3> <h4>142.0</h4><br>                 <h3>Уровень удалённых шумов:</h3> <h4>49.0</h4><br>                 <h3>Координаты:</h3> <h4>473242687.0, 387756410.0</h4>                 </div>`)[0];
+                popup_f6e3ccb6253200b31e1816085e848b47.setContent(html_73adfa061b7ef192585609037d44dc3b);
+            
+        
+
+        marker_7bc049bfb4e4bd155dde705aca399167.bindPopup(popup_f6e3ccb6253200b31e1816085e848b47)
+        ;
+
+        
+    
+    
+            var marker_7d14ecb51ec04ee8a584d0a58431c1a7 = L.marker(
+                [47.3242653, 38.7756462],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_50a3432e9bfe8e875187ad7da84be9ba = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_3d3b5b0956f77ce9ec39247fc653017f = $(`<div id="html_3d3b5b0956f77ce9ec39247fc653017f" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473242653.0, 387756462.0</h4></div>`)[0];
+                popup_50a3432e9bfe8e875187ad7da84be9ba.setContent(html_3d3b5b0956f77ce9ec39247fc653017f);
+            
+        
+
+        marker_7d14ecb51ec04ee8a584d0a58431c1a7.bindPopup(popup_50a3432e9bfe8e875187ad7da84be9ba)
+        ;
+
+        
+    
+    
+            var marker_5b81e95b91a33717d9db4cd74312a501 = L.marker(
+                [47.3242677, 38.7756422],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+            var icon_ef2ed4e1280a4e6bf8346b8f3b8908b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5b81e95b91a33717d9db4cd74312a501.setIcon(icon_ef2ed4e1280a4e6bf8346b8f3b8908b0);
+        
+    
+        var popup_982155224fbe5ff6dc1f218fdbbe7ba9 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_df54266ea8146f5a3bda9328c9697206 = $(`<div id="html_df54266ea8146f5a3bda9328c9697206" style="width: 100.0%; height: 100.0%;"><h3>Код ошибки приёма:</h3> <h4>2.0</h4><br>                 <h3>Сила сигнала:</h3> <h4>135.0</h4><br>                 <h3>Уровень удалённых шумов:</h3> <h4>52.0</h4><br>                 <h3>Координаты:</h3> <h4>473242677.0, 387756422.0</h4>                 </div>`)[0];
+                popup_982155224fbe5ff6dc1f218fdbbe7ba9.setContent(html_df54266ea8146f5a3bda9328c9697206);
+            
+        
+
+        marker_5b81e95b91a33717d9db4cd74312a501.bindPopup(popup_982155224fbe5ff6dc1f218fdbbe7ba9)
+        ;
+
+        
+    
+    
+            var marker_a87ef70cd0189e839dad4c3511d4f5fc = L.marker(
+                [47.3242657, 38.7756449],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_45c63f0392ec70622d493091771bda9e = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_34c39bdced8fc42e69c3c9793a8750f9 = $(`<div id="html_34c39bdced8fc42e69c3c9793a8750f9" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473242657.0, 387756449.0</h4></div>`)[0];
+                popup_45c63f0392ec70622d493091771bda9e.setContent(html_34c39bdced8fc42e69c3c9793a8750f9);
+            
+        
+
+        marker_a87ef70cd0189e839dad4c3511d4f5fc.bindPopup(popup_45c63f0392ec70622d493091771bda9e)
+        ;
+
+        
+    
+    
+            var marker_d63b2e1be8c2087a968be1322ce0c2a3 = L.marker(
+                [47.3242675, 38.7756322],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+            var icon_65a855082f6dfd0441eec2f3a2a54434 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d63b2e1be8c2087a968be1322ce0c2a3.setIcon(icon_65a855082f6dfd0441eec2f3a2a54434);
+        
+    
+        var popup_9e956b8342200318324ec169db6c0df1 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_ab45791d55e080bb34d2784294a99413 = $(`<div id="html_ab45791d55e080bb34d2784294a99413" style="width: 100.0%; height: 100.0%;"><h3>Код ошибки приёма:</h3> <h4>2.0</h4><br>                 <h3>Сила сигнала:</h3> <h4>124.0</h4><br>                 <h3>Уровень удалённых шумов:</h3> <h4>58.0</h4><br>                 <h3>Координаты:</h3> <h4>473242675.0, 387756322.0</h4>                 </div>`)[0];
+                popup_9e956b8342200318324ec169db6c0df1.setContent(html_ab45791d55e080bb34d2784294a99413);
+            
+        
+
+        marker_d63b2e1be8c2087a968be1322ce0c2a3.bindPopup(popup_9e956b8342200318324ec169db6c0df1)
+        ;
+
+        
+    
+    
+            var marker_dd21e36f1d1a5b3aa085c6253027b1cc = L.marker(
+                [47.3242664, 38.7756435],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_0a1c08acebe5f87ae4409913b0acbb42 = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_6d5210a10505543375c749abfc02fa14 = $(`<div id="html_6d5210a10505543375c749abfc02fa14" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473242664.0, 387756435.0</h4></div>`)[0];
+                popup_0a1c08acebe5f87ae4409913b0acbb42.setContent(html_6d5210a10505543375c749abfc02fa14);
+            
+        
+
+        marker_dd21e36f1d1a5b3aa085c6253027b1cc.bindPopup(popup_0a1c08acebe5f87ae4409913b0acbb42)
+        ;
+
+        
+    
+    
+            var marker_1efc8887a2aacecc3df44ebd866018be = L.marker(
+                [47.3242534, 38.7756133],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+            var icon_d3ca4292c1777ad9619102ea75c2bd2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1efc8887a2aacecc3df44ebd866018be.setIcon(icon_d3ca4292c1777ad9619102ea75c2bd2e);
+        
+    
+        var popup_921e87e1adfe7767621c53ebd72eb38b = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_8fda541cbd05a7217a7680e643762727 = $(`<div id="html_8fda541cbd05a7217a7680e643762727" style="width: 100.0%; height: 100.0%;"><h3>Код ошибки приёма:</h3> <h4>2.0</h4><br>                 <h3>Сила сигнала:</h3> <h4>124.0</h4><br>                 <h3>Уровень удалённых шумов:</h3> <h4>45.0</h4><br>                 <h3>Координаты:</h3> <h4>473242534.0, 387756133.0</h4>                 </div>`)[0];
+                popup_921e87e1adfe7767621c53ebd72eb38b.setContent(html_8fda541cbd05a7217a7680e643762727);
+            
+        
+
+        marker_1efc8887a2aacecc3df44ebd866018be.bindPopup(popup_921e87e1adfe7767621c53ebd72eb38b)
+        ;
+
+        
+    
+    
+            var marker_d4580c8de358e12b9860f42a106af04f = L.marker(
+                [47.3242674, 38.7756415],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_83bba20d4db6a2be054b6f1ba6138255 = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_f278be1c2ef4ee4e5cc2b0766c5fd615 = $(`<div id="html_f278be1c2ef4ee4e5cc2b0766c5fd615" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473242674.0, 387756415.0</h4></div>`)[0];
+                popup_83bba20d4db6a2be054b6f1ba6138255.setContent(html_f278be1c2ef4ee4e5cc2b0766c5fd615);
+            
+        
+
+        marker_d4580c8de358e12b9860f42a106af04f.bindPopup(popup_83bba20d4db6a2be054b6f1ba6138255)
+        ;
+
+        
+    
+    
+            var marker_c2eb6be26209d524f14898cf03e8db50 = L.marker(
+                [47.3242069, 38.7755884],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+            var icon_5e26b4fff4818e3ae348c82714fa1851 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c2eb6be26209d524f14898cf03e8db50.setIcon(icon_5e26b4fff4818e3ae348c82714fa1851);
+        
+    
+        var popup_578c8ab263bb293fcf025eb90dc2c1c7 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_29759f22d452103cbe63df6a6917b3f5 = $(`<div id="html_29759f22d452103cbe63df6a6917b3f5" style="width: 100.0%; height: 100.0%;"><h3>Код ошибки приёма:</h3> <h4>2.0</h4><br>                 <h3>Сила сигнала:</h3> <h4>130.0</h4><br>                 <h3>Уровень удалённых шумов:</h3> <h4>51.0</h4><br>                 <h3>Координаты:</h3> <h4>473242069.0, 387755884.0</h4>                 </div>`)[0];
+                popup_578c8ab263bb293fcf025eb90dc2c1c7.setContent(html_29759f22d452103cbe63df6a6917b3f5);
+            
+        
+
+        marker_c2eb6be26209d524f14898cf03e8db50.bindPopup(popup_578c8ab263bb293fcf025eb90dc2c1c7)
+        ;
+
+        
+    
+    
+            var marker_c697cfd74107d9a117931f5fbd8e3a36 = L.marker(
+                [47.3242681, 38.7756403],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_8ebab0f0da3df811a2ddb9b55cff8b31 = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_65cf2a6f8a19d5072c5046cb20b73247 = $(`<div id="html_65cf2a6f8a19d5072c5046cb20b73247" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473242681.0, 387756403.0</h4></div>`)[0];
+                popup_8ebab0f0da3df811a2ddb9b55cff8b31.setContent(html_65cf2a6f8a19d5072c5046cb20b73247);
+            
+        
+
+        marker_c697cfd74107d9a117931f5fbd8e3a36.bindPopup(popup_8ebab0f0da3df811a2ddb9b55cff8b31)
+        ;
+
+        
+    
+    
+            var marker_71799d7ddbc1dfeb9c3c3643832c1752 = L.marker(
+                [47.3241631, 38.775562],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+            var icon_986959fc326eba4a7c96a099d8a6a02f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_71799d7ddbc1dfeb9c3c3643832c1752.setIcon(icon_986959fc326eba4a7c96a099d8a6a02f);
+        
+    
+        var popup_80ad9ea6582b370fcc4db306454a15b5 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_d702d1d44e300861fda50b21009c2e7c = $(`<div id="html_d702d1d44e300861fda50b21009c2e7c" style="width: 100.0%; height: 100.0%;"><h3>Код ошибки приёма:</h3> <h4>2.0</h4><br>                 <h3>Сила сигнала:</h3> <h4>123.0</h4><br>                 <h3>Уровень удалённых шумов:</h3> <h4>45.0</h4><br>                 <h3>Координаты:</h3> <h4>473241631.0, 387755620.0</h4>                 </div>`)[0];
+                popup_80ad9ea6582b370fcc4db306454a15b5.setContent(html_d702d1d44e300861fda50b21009c2e7c);
+            
+        
+
+        marker_71799d7ddbc1dfeb9c3c3643832c1752.bindPopup(popup_80ad9ea6582b370fcc4db306454a15b5)
+        ;
+
+        
+    
+    
+            var marker_f9baa0870d4bf08c56311fb6a147dd75 = L.marker(
+                [47.3242684, 38.77564],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_aeb3819beed231351aabcb776d1f07f9 = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_d34b068a895e2e6ee01a4f8ecd422888 = $(`<div id="html_d34b068a895e2e6ee01a4f8ecd422888" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473242684.0, 387756400.0</h4></div>`)[0];
+                popup_aeb3819beed231351aabcb776d1f07f9.setContent(html_d34b068a895e2e6ee01a4f8ecd422888);
+            
+        
+
+        marker_f9baa0870d4bf08c56311fb6a147dd75.bindPopup(popup_aeb3819beed231351aabcb776d1f07f9)
+        ;
+
+        
+    
+    
+            var marker_66552769e0c0def018f00373a7856e45 = L.marker(
+                [47.3241192, 38.7755356],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+            var icon_a46824baea11ed0de4fc9e3fce034654 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_66552769e0c0def018f00373a7856e45.setIcon(icon_a46824baea11ed0de4fc9e3fce034654);
+        
+    
+        var popup_93475547b75ac05b6be616f0ebfe7911 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_cc1bd7616bc528e26eac646848f1d358 = $(`<div id="html_cc1bd7616bc528e26eac646848f1d358" style="width: 100.0%; height: 100.0%;"><h3>Код ошибки приёма:</h3> <h4>2.0</h4><br>                 <h3>Сила сигнала:</h3> <h4>120.0</h4><br>                 <h3>Уровень удалённых шумов:</h3> <h4>50.0</h4><br>                 <h3>Координаты:</h3> <h4>473241192.0, 387755356.0</h4>                 </div>`)[0];
+                popup_93475547b75ac05b6be616f0ebfe7911.setContent(html_cc1bd7616bc528e26eac646848f1d358);
+            
+        
+
+        marker_66552769e0c0def018f00373a7856e45.bindPopup(popup_93475547b75ac05b6be616f0ebfe7911)
+        ;
+
+        
+    
+    
+            var marker_b2501c69e9b9e5c7ffd28249b1a63564 = L.marker(
+                [47.3242687, 38.775641],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_c2217e9871cb86461c26407fdbcd0caa = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_d91cf4d6fa818a97d88b039b824a3bbf = $(`<div id="html_d91cf4d6fa818a97d88b039b824a3bbf" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473242687.0, 387756410.0</h4></div>`)[0];
+                popup_c2217e9871cb86461c26407fdbcd0caa.setContent(html_d91cf4d6fa818a97d88b039b824a3bbf);
+            
+        
+
+        marker_b2501c69e9b9e5c7ffd28249b1a63564.bindPopup(popup_c2217e9871cb86461c26407fdbcd0caa)
+        ;
+
+        
+    
+    
+            var marker_87a939112a1a5f3e2e83be0a21440180 = L.marker(
+                [47.3240733, 38.7755086],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+            var icon_bd7b76c8094e05065b44b62a218db70c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_87a939112a1a5f3e2e83be0a21440180.setIcon(icon_bd7b76c8094e05065b44b62a218db70c);
+        
+    
+        var popup_392658c7c7b372e84785d2aff6cd8382 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_9d6d58c26469781987148302699ecc35 = $(`<div id="html_9d6d58c26469781987148302699ecc35" style="width: 100.0%; height: 100.0%;"><h3>Код ошибки приёма:</h3> <h4>2.0</h4><br>                 <h3>Сила сигнала:</h3> <h4>112.0</h4><br>                 <h3>Уровень удалённых шумов:</h3> <h4>52.0</h4><br>                 <h3>Координаты:</h3> <h4>473240733.0, 387755086.0</h4>                 </div>`)[0];
+                popup_392658c7c7b372e84785d2aff6cd8382.setContent(html_9d6d58c26469781987148302699ecc35);
+            
+        
+
+        marker_87a939112a1a5f3e2e83be0a21440180.bindPopup(popup_392658c7c7b372e84785d2aff6cd8382)
+        ;
+
+        
+    
+    
+            var marker_04de715b2f0569bda4e6993d6f32d9bb = L.marker(
+                [47.324268, 38.7756423],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_0d91d8a73c3ec6c4c4b80a3eb9c1456a = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_b9345c7c31208e75af8ecbb5284c6514 = $(`<div id="html_b9345c7c31208e75af8ecbb5284c6514" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473242680.0, 387756423.0</h4></div>`)[0];
+                popup_0d91d8a73c3ec6c4c4b80a3eb9c1456a.setContent(html_b9345c7c31208e75af8ecbb5284c6514);
+            
+        
+
+        marker_04de715b2f0569bda4e6993d6f32d9bb.bindPopup(popup_0d91d8a73c3ec6c4c4b80a3eb9c1456a)
+        ;
+
+        
+    
+    
+            var marker_496d038d1e7a704bc4aebb921997d75d = L.marker(
+                [47.3240287, 38.7754813],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+            var icon_70c9fdcb7087b98c16fbfa4a657b5182 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_496d038d1e7a704bc4aebb921997d75d.setIcon(icon_70c9fdcb7087b98c16fbfa4a657b5182);
+        
+    
+        var popup_ac49ec290042a9118a46b83b6aa08c8f = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_061fa52a5be5123d481c36c16cbf9361 = $(`<div id="html_061fa52a5be5123d481c36c16cbf9361" style="width: 100.0%; height: 100.0%;"><h3>Код ошибки приёма:</h3> <h4>2.0</h4><br>                 <h3>Сила сигнала:</h3> <h4>113.0</h4><br>                 <h3>Уровень удалённых шумов:</h3> <h4>42.0</h4><br>                 <h3>Координаты:</h3> <h4>473240287.0, 387754813.0</h4>                 </div>`)[0];
+                popup_ac49ec290042a9118a46b83b6aa08c8f.setContent(html_061fa52a5be5123d481c36c16cbf9361);
+            
+        
+
+        marker_496d038d1e7a704bc4aebb921997d75d.bindPopup(popup_ac49ec290042a9118a46b83b6aa08c8f)
+        ;
+
+        
+    
+    
+            var marker_29c720ba885d36cc1a934f6046692c08 = L.marker(
+                [47.3242677, 38.7756422],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_9e5c7408eef9997cc0bfaae932e3ae80 = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_e1d3cfa521881396ff4cf22ab67407c5 = $(`<div id="html_e1d3cfa521881396ff4cf22ab67407c5" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473242677.0, 387756422.0</h4></div>`)[0];
+                popup_9e5c7408eef9997cc0bfaae932e3ae80.setContent(html_e1d3cfa521881396ff4cf22ab67407c5);
+            
+        
+
+        marker_29c720ba885d36cc1a934f6046692c08.bindPopup(popup_9e5c7408eef9997cc0bfaae932e3ae80)
+        ;
+
+        
+    
+    
+            var marker_a68d72a955cf1383771a8180f980a2e8 = L.marker(
+                [47.3239751, 38.7754486],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+            var icon_36528ca2c85a8b02070c2676f4358ed7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a68d72a955cf1383771a8180f980a2e8.setIcon(icon_36528ca2c85a8b02070c2676f4358ed7);
+        
+    
+        var popup_3629116358f7e6ebbace8b204308b301 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_3dc61cf629e70a2bee9857fcb6cf0c28 = $(`<div id="html_3dc61cf629e70a2bee9857fcb6cf0c28" style="width: 100.0%; height: 100.0%;"><h3>Код ошибки приёма:</h3> <h4>2.0</h4><br>                 <h3>Сила сигнала:</h3> <h4>99.0</h4><br>                 <h3>Уровень удалённых шумов:</h3> <h4>48.0</h4><br>                 <h3>Координаты:</h3> <h4>473239751.0, 387754486.0</h4>                 </div>`)[0];
+                popup_3629116358f7e6ebbace8b204308b301.setContent(html_3dc61cf629e70a2bee9857fcb6cf0c28);
+            
+        
+
+        marker_a68d72a955cf1383771a8180f980a2e8.bindPopup(popup_3629116358f7e6ebbace8b204308b301)
+        ;
+
+        
+    
+    
+            var marker_c83d1cd9af21870b9571cb5291e5829c = L.marker(
+                [47.3242675, 38.7756371],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_45959133fc370380938110c43d510b4e = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_75c0f58ca45810148ed247f185e64b53 = $(`<div id="html_75c0f58ca45810148ed247f185e64b53" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473242675.0, 387756371.0</h4></div>`)[0];
+                popup_45959133fc370380938110c43d510b4e.setContent(html_75c0f58ca45810148ed247f185e64b53);
+            
+        
+
+        marker_c83d1cd9af21870b9571cb5291e5829c.bindPopup(popup_45959133fc370380938110c43d510b4e)
+        ;
+
+        
+    
+    
+            var marker_32b3ee3266aa3783abe85d45c7bd16af = L.marker(
+                [47.3239394, 38.7754269],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+            var icon_d2c32a9cdd52faa9e35c503cd7f59a3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_32b3ee3266aa3783abe85d45c7bd16af.setIcon(icon_d2c32a9cdd52faa9e35c503cd7f59a3c);
+        
+    
+        var popup_e4f1a01ac25c2fbe3e5a7fa08cbf36c7 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_fa6d689f74e69e5f9efb91c5e419b214 = $(`<div id="html_fa6d689f74e69e5f9efb91c5e419b214" style="width: 100.0%; height: 100.0%;"><h3>Код ошибки приёма:</h3> <h4>2.0</h4><br>                 <h3>Сила сигнала:</h3> <h4>86.0</h4><br>                 <h3>Уровень удалённых шумов:</h3> <h4>45.0</h4><br>                 <h3>Координаты:</h3> <h4>473239394.0, 387754269.0</h4>                 </div>`)[0];
+                popup_e4f1a01ac25c2fbe3e5a7fa08cbf36c7.setContent(html_fa6d689f74e69e5f9efb91c5e419b214);
+            
+        
+
+        marker_32b3ee3266aa3783abe85d45c7bd16af.bindPopup(popup_e4f1a01ac25c2fbe3e5a7fa08cbf36c7)
+        ;
+
+        
+    
+    
+            var marker_757fb17a3bb188033e63bb92ca634f96 = L.marker(
+                [47.3242675, 38.7756322],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_ac983624e99cc528f01d8313b88fe3ac = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_d7c37b67acce7f4abd1c4e4afecf422e = $(`<div id="html_d7c37b67acce7f4abd1c4e4afecf422e" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473242675.0, 387756322.0</h4></div>`)[0];
+                popup_ac983624e99cc528f01d8313b88fe3ac.setContent(html_d7c37b67acce7f4abd1c4e4afecf422e);
+            
+        
+
+        marker_757fb17a3bb188033e63bb92ca634f96.bindPopup(popup_ac983624e99cc528f01d8313b88fe3ac)
+        ;
+
+        
+    
+    
+            var marker_d701f45e2788a9c477e4e54f8cc0f928 = L.marker(
+                [47.3238948, 38.7753996],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+            var icon_651ffa6e4b45748286fa13ecacc90e90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d701f45e2788a9c477e4e54f8cc0f928.setIcon(icon_651ffa6e4b45748286fa13ecacc90e90);
+        
+    
+        var popup_205d7badf4f55674688d01accd30c8c8 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_b8550c53d476fa0b6eeb7ed7616ed167 = $(`<div id="html_b8550c53d476fa0b6eeb7ed7616ed167" style="width: 100.0%; height: 100.0%;"><h3>Код ошибки приёма:</h3> <h4>2.0</h4><br>                 <h3>Сила сигнала:</h3> <h4>79.0</h4><br>                 <h3>Уровень удалённых шумов:</h3> <h4>41.0</h4><br>                 <h3>Координаты:</h3> <h4>473238948.0, 387753996.0</h4>                 </div>`)[0];
+                popup_205d7badf4f55674688d01accd30c8c8.setContent(html_b8550c53d476fa0b6eeb7ed7616ed167);
+            
+        
+
+        marker_d701f45e2788a9c477e4e54f8cc0f928.bindPopup(popup_205d7badf4f55674688d01accd30c8c8)
+        ;
+
+        
+    
+    
+            var marker_a288bccc2716780b25b0703790497918 = L.marker(
+                [47.3242645, 38.7756218],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_a84b880f11e60385ea6785d60c9f82a4 = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_260bb03980ca0a111db094e288919ded = $(`<div id="html_260bb03980ca0a111db094e288919ded" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473242645.0, 387756218.0</h4></div>`)[0];
+                popup_a84b880f11e60385ea6785d60c9f82a4.setContent(html_260bb03980ca0a111db094e288919ded);
+            
+        
+
+        marker_a288bccc2716780b25b0703790497918.bindPopup(popup_a84b880f11e60385ea6785d60c9f82a4)
+        ;
+
+        
+    
+    
+            var marker_7ba86b59fe2f27c3175fceba936ec3e6 = L.marker(
+                [47.3238501, 38.7753724],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+            var icon_e9d7e320e0bb5f63295b22048a3f67a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7ba86b59fe2f27c3175fceba936ec3e6.setIcon(icon_e9d7e320e0bb5f63295b22048a3f67a5);
+        
+    
+        var popup_f4781bd78825ae605fb67d02da83a07b = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_6b3f7e6212a4e33ef85609e9a427e1f8 = $(`<div id="html_6b3f7e6212a4e33ef85609e9a427e1f8" style="width: 100.0%; height: 100.0%;"><h3>Код ошибки приёма:</h3> <h4>2.0</h4><br>                 <h3>Сила сигнала:</h3> <h4>74.0</h4><br>                 <h3>Уровень удалённых шумов:</h3> <h4>41.0</h4><br>                 <h3>Координаты:</h3> <h4>473238501.0, 387753724.0</h4>                 </div>`)[0];
+                popup_f4781bd78825ae605fb67d02da83a07b.setContent(html_6b3f7e6212a4e33ef85609e9a427e1f8);
+            
+        
+
+        marker_7ba86b59fe2f27c3175fceba936ec3e6.bindPopup(popup_f4781bd78825ae605fb67d02da83a07b)
+        ;
+
+        
+    
+    
+            var marker_c34627c38a2d429919bfd3d0474d5b8f = L.marker(
+                [47.3242534, 38.7756133],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_df16e62a66770d12f253e12262f56400 = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_757d08dadfbf9ebcffabb62ec55cc509 = $(`<div id="html_757d08dadfbf9ebcffabb62ec55cc509" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473242534.0, 387756133.0</h4></div>`)[0];
+                popup_df16e62a66770d12f253e12262f56400.setContent(html_757d08dadfbf9ebcffabb62ec55cc509);
+            
+        
+
+        marker_c34627c38a2d429919bfd3d0474d5b8f.bindPopup(popup_df16e62a66770d12f253e12262f56400)
+        ;
+
+        
+    
+    
+            var marker_7383dd4dc8c15b2e775e8e63d4e5fa25 = L.marker(
+                [47.3238055, 38.7753452],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+            var icon_63369921105aade1e9dd0e5124776d17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7383dd4dc8c15b2e775e8e63d4e5fa25.setIcon(icon_63369921105aade1e9dd0e5124776d17);
+        
+    
+        var popup_30355f0903941616d79d953d349e3832 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_b8bbe01ac22d20d75ad18dfce919fdf1 = $(`<div id="html_b8bbe01ac22d20d75ad18dfce919fdf1" style="width: 100.0%; height: 100.0%;"><h3>Код ошибки приёма:</h3> <h4>3.0</h4><br>                 <h3>Сила сигнала:</h3> <h4>76.0</h4><br>                 <h3>Уровень удалённых шумов:</h3> <h4>49.0</h4><br>                 <h3>Координаты:</h3> <h4>473238055.0, 387753452.0</h4>                 </div>`)[0];
+                popup_30355f0903941616d79d953d349e3832.setContent(html_b8bbe01ac22d20d75ad18dfce919fdf1);
+            
+        
+
+        marker_7383dd4dc8c15b2e775e8e63d4e5fa25.bindPopup(popup_30355f0903941616d79d953d349e3832)
+        ;
+
+        
+    
+    
+            var marker_bb9414fccaa00a9386266757e6b7c7df = L.marker(
+                [47.3242243, 38.7755991],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_55c1ec37cb613fcc409a5c517301323e = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_081f68c265b121580451b45431721eac = $(`<div id="html_081f68c265b121580451b45431721eac" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473242243.0, 387755991.0</h4></div>`)[0];
+                popup_55c1ec37cb613fcc409a5c517301323e.setContent(html_081f68c265b121580451b45431721eac);
+            
+        
+
+        marker_bb9414fccaa00a9386266757e6b7c7df.bindPopup(popup_55c1ec37cb613fcc409a5c517301323e)
+        ;
+
+        
+    
+    
+            var marker_cc9ae5575b4ac4358023bccb1e930cac = L.marker(
+                [47.3241718, 38.7755437],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+            var icon_a3fb2a69e291166e809aa4d60ef81134 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cc9ae5575b4ac4358023bccb1e930cac.setIcon(icon_a3fb2a69e291166e809aa4d60ef81134);
+        
+    
+        var popup_600be2c7ea3adf4f3346015052fb89cd = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_f5175cf29afe017edc2c42ed47a3ca48 = $(`<div id="html_f5175cf29afe017edc2c42ed47a3ca48" style="width: 100.0%; height: 100.0%;"><h3>Код ошибки приёма:</h3> <h4>3.0</h4><br>                 <h3>Сила сигнала:</h3> <h4>82.0</h4><br>                 <h3>Уровень удалённых шумов:</h3> <h4>51.0</h4><br>                 <h3>Координаты:</h3> <h4>473241718.0, 387755437.0</h4>                 </div>`)[0];
+                popup_600be2c7ea3adf4f3346015052fb89cd.setContent(html_f5175cf29afe017edc2c42ed47a3ca48);
+            
+        
+
+        marker_cc9ae5575b4ac4358023bccb1e930cac.bindPopup(popup_600be2c7ea3adf4f3346015052fb89cd)
+        ;
+
+        
+    
+    
+            var marker_8ba12220ef65454772fe4e7116c1f4fc = L.marker(
+                [47.3242069, 38.7755884],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_a7c72d7b8b38e87c9e501f46bf8af4e2 = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_390b3e96a8760e85eb17ceb1986d0785 = $(`<div id="html_390b3e96a8760e85eb17ceb1986d0785" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473242069.0, 387755884.0</h4></div>`)[0];
+                popup_a7c72d7b8b38e87c9e501f46bf8af4e2.setContent(html_390b3e96a8760e85eb17ceb1986d0785);
+            
+        
+
+        marker_8ba12220ef65454772fe4e7116c1f4fc.bindPopup(popup_a7c72d7b8b38e87c9e501f46bf8af4e2)
+        ;
+
+        
+    
+    
+            var marker_41c2e412d8449eead3a34c4eeca83540 = L.marker(
+                [47.3242402, 38.7755572],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+            var icon_bf77b941c8ceb4e3aeeac60c31acdae2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_41c2e412d8449eead3a34c4eeca83540.setIcon(icon_bf77b941c8ceb4e3aeeac60c31acdae2);
+        
+    
+        var popup_96cd55fdcaded2d495fc50ac97233454 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_ec3fef7e4e132b0ac6788dc850ec39cd = $(`<div id="html_ec3fef7e4e132b0ac6788dc850ec39cd" style="width: 100.0%; height: 100.0%;"><h3>Код ошибки приёма:</h3> <h4>3.0</h4><br>                 <h3>Сила сигнала:</h3> <h4>82.0</h4><br>                 <h3>Уровень удалённых шумов:</h3> <h4>51.0</h4><br>                 <h3>Координаты:</h3> <h4>473242402.0, 387755572.0</h4>                 </div>`)[0];
+                popup_96cd55fdcaded2d495fc50ac97233454.setContent(html_ec3fef7e4e132b0ac6788dc850ec39cd);
+            
+        
+
+        marker_41c2e412d8449eead3a34c4eeca83540.bindPopup(popup_96cd55fdcaded2d495fc50ac97233454)
+        ;
+
+        
+    
+    
+            var marker_8c0771389d1af44a560b8a3176664dd1 = L.marker(
+                [47.3241806, 38.7755726],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_43334ef08196c24a7bb9bebdbbc8b3cf = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_7911033b59ad93d550da1f55171f1dbb = $(`<div id="html_7911033b59ad93d550da1f55171f1dbb" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473241806.0, 387755726.0</h4></div>`)[0];
+                popup_43334ef08196c24a7bb9bebdbbc8b3cf.setContent(html_7911033b59ad93d550da1f55171f1dbb);
+            
+        
+
+        marker_8c0771389d1af44a560b8a3176664dd1.bindPopup(popup_43334ef08196c24a7bb9bebdbbc8b3cf)
+        ;
+
+        
+    
+    
+            var marker_2dd362dd0d4a1b9c694f0f2ba0f91717 = L.marker(
+                [47.3241631, 38.775562],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_d9b89a13ee65dec731facc4d57019598 = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_0642a88616df4302dffccacca3bd13d0 = $(`<div id="html_0642a88616df4302dffccacca3bd13d0" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473241631.0, 387755620.0</h4></div>`)[0];
+                popup_d9b89a13ee65dec731facc4d57019598.setContent(html_0642a88616df4302dffccacca3bd13d0);
+            
+        
+
+        marker_2dd362dd0d4a1b9c694f0f2ba0f91717.bindPopup(popup_d9b89a13ee65dec731facc4d57019598)
+        ;
+
+        
+    
+    
+            var marker_6328e9f5be3fdfc5a576216813df43a5 = L.marker(
+                [47.3241368, 38.7755461],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_c8080157da680f20eb90569c25fdd873 = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_7fd87e252d9840badc4b71a436019649 = $(`<div id="html_7fd87e252d9840badc4b71a436019649" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473241368.0, 387755461.0</h4></div>`)[0];
+                popup_c8080157da680f20eb90569c25fdd873.setContent(html_7fd87e252d9840badc4b71a436019649);
+            
+        
+
+        marker_6328e9f5be3fdfc5a576216813df43a5.bindPopup(popup_c8080157da680f20eb90569c25fdd873)
+        ;
+
+        
+    
+    
+            var marker_7f2ee1bf316b2130daca89cf7cd5bb8c = L.marker(
+                [47.3241192, 38.7755356],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_9462e099ce45ce93d7bfb58ab4eaf43a = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_9f1c98ae6cc4cca17eddd2cf10dbc29b = $(`<div id="html_9f1c98ae6cc4cca17eddd2cf10dbc29b" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473241192.0, 387755356.0</h4></div>`)[0];
+                popup_9462e099ce45ce93d7bfb58ab4eaf43a.setContent(html_9f1c98ae6cc4cca17eddd2cf10dbc29b);
+            
+        
+
+        marker_7f2ee1bf316b2130daca89cf7cd5bb8c.bindPopup(popup_9462e099ce45ce93d7bfb58ab4eaf43a)
+        ;
+
+        
+    
+    
+            var marker_bdb53882e588b67052a74b2329add12e = L.marker(
+                [47.3240911, 38.7755194],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_f3f56bf424359ff0558efc27b64d634a = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_48dabb5b58d220141556fed7f24801f2 = $(`<div id="html_48dabb5b58d220141556fed7f24801f2" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473240911.0, 387755194.0</h4></div>`)[0];
+                popup_f3f56bf424359ff0558efc27b64d634a.setContent(html_48dabb5b58d220141556fed7f24801f2);
+            
+        
+
+        marker_bdb53882e588b67052a74b2329add12e.bindPopup(popup_f3f56bf424359ff0558efc27b64d634a)
+        ;
+
+        
+    
+    
+            var marker_7de05184a6c6493072c0fb4bcaf1822e = L.marker(
+                [47.3240733, 38.7755086],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_11cdd337e50bd857639e4566075b9ed0 = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_c7a0b28aef8de08ec40d7b73786c3a9e = $(`<div id="html_c7a0b28aef8de08ec40d7b73786c3a9e" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473240733.0, 387755086.0</h4></div>`)[0];
+                popup_11cdd337e50bd857639e4566075b9ed0.setContent(html_c7a0b28aef8de08ec40d7b73786c3a9e);
+            
+        
+
+        marker_7de05184a6c6493072c0fb4bcaf1822e.bindPopup(popup_11cdd337e50bd857639e4566075b9ed0)
+        ;
+
+        
+    
+    
+            var marker_1d1c44141b6673b86345903a4b696ec3 = L.marker(
+                [47.3240465, 38.7754922],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_d4742a65a9a56a4e8819af79fe1a1214 = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_e1d78c6d2fd4107c883cb1d74bb55b97 = $(`<div id="html_e1d78c6d2fd4107c883cb1d74bb55b97" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473240465.0, 387754922.0</h4></div>`)[0];
+                popup_d4742a65a9a56a4e8819af79fe1a1214.setContent(html_e1d78c6d2fd4107c883cb1d74bb55b97);
+            
+        
+
+        marker_1d1c44141b6673b86345903a4b696ec3.bindPopup(popup_d4742a65a9a56a4e8819af79fe1a1214)
+        ;
+
+        
+    
+    
+            var marker_f21894c86b51ae75ec69270b5beac0ac = L.marker(
+                [47.3240287, 38.7754813],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_ac30c58dd4b9498602116d231c023d9c = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_7059efd5c2b6c6843b022a865e13c614 = $(`<div id="html_7059efd5c2b6c6843b022a865e13c614" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473240287.0, 387754813.0</h4></div>`)[0];
+                popup_ac30c58dd4b9498602116d231c023d9c.setContent(html_7059efd5c2b6c6843b022a865e13c614);
+            
+        
+
+        marker_f21894c86b51ae75ec69270b5beac0ac.bindPopup(popup_ac30c58dd4b9498602116d231c023d9c)
+        ;
+
+        
+    
+    
+            var marker_5a96ecfef5f7a0d7318caeebb1d25e46 = L.marker(
+                [47.3240019, 38.775465],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_343710576add1489db9839b4f807a206 = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_d7f8828e2c5ab0c1e30b4415efde23bb = $(`<div id="html_d7f8828e2c5ab0c1e30b4415efde23bb" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473240019.0, 387754650.0</h4></div>`)[0];
+                popup_343710576add1489db9839b4f807a206.setContent(html_d7f8828e2c5ab0c1e30b4415efde23bb);
+            
+        
+
+        marker_5a96ecfef5f7a0d7318caeebb1d25e46.bindPopup(popup_343710576add1489db9839b4f807a206)
+        ;
+
+        
+    
+    
+            var marker_457935bee05b90a0183ba70e051fb3e8 = L.marker(
+                [47.3239751, 38.7754486],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_c612ef3c229cfe6d005bc3be6f02c79c = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_0c7a1c4930467fc964c0004ed6a9c6a2 = $(`<div id="html_0c7a1c4930467fc964c0004ed6a9c6a2" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473239751.0, 387754486.0</h4></div>`)[0];
+                popup_c612ef3c229cfe6d005bc3be6f02c79c.setContent(html_0c7a1c4930467fc964c0004ed6a9c6a2);
+            
+        
+
+        marker_457935bee05b90a0183ba70e051fb3e8.bindPopup(popup_c612ef3c229cfe6d005bc3be6f02c79c)
+        ;
+
+        
+    
+    
+            var marker_10923e19107a6ec70c3d3bb2e1c4393f = L.marker(
+                [47.3239573, 38.7754378],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_8b000a327a5ed19f35f93449058739f4 = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_04ee0a327ca478c9f55e5508c61227d4 = $(`<div id="html_04ee0a327ca478c9f55e5508c61227d4" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473239573.0, 387754378.0</h4></div>`)[0];
+                popup_8b000a327a5ed19f35f93449058739f4.setContent(html_04ee0a327ca478c9f55e5508c61227d4);
+            
+        
+
+        marker_10923e19107a6ec70c3d3bb2e1c4393f.bindPopup(popup_8b000a327a5ed19f35f93449058739f4)
+        ;
+
+        
+    
+    
+            var marker_78aba6a7812b3234f88bc52a01230cdb = L.marker(
+                [47.3239394, 38.7754269],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_dcd67e4aef9edb91a6567380432a33ab = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_bbf4b50122ad2244f80ae14b30934dd0 = $(`<div id="html_bbf4b50122ad2244f80ae14b30934dd0" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473239394.0, 387754269.0</h4></div>`)[0];
+                popup_dcd67e4aef9edb91a6567380432a33ab.setContent(html_bbf4b50122ad2244f80ae14b30934dd0);
+            
+        
+
+        marker_78aba6a7812b3234f88bc52a01230cdb.bindPopup(popup_dcd67e4aef9edb91a6567380432a33ab)
+        ;
+
+        
+    
+    
+            var marker_9b26ada4ec536c5c5dd573e0749a72d6 = L.marker(
+                [47.3239126, 38.7754105],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_adbfa261506b859b4805adcddaa48b52 = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_d435758e49bf9b04d2430a1b584b4460 = $(`<div id="html_d435758e49bf9b04d2430a1b584b4460" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473239126.0, 387754105.0</h4></div>`)[0];
+                popup_adbfa261506b859b4805adcddaa48b52.setContent(html_d435758e49bf9b04d2430a1b584b4460);
+            
+        
+
+        marker_9b26ada4ec536c5c5dd573e0749a72d6.bindPopup(popup_adbfa261506b859b4805adcddaa48b52)
+        ;
+
+        
+    
+    
+            var marker_01dc763ec12023bf19eac7c18ddfe491 = L.marker(
+                [47.3238948, 38.7753996],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_8110c1862da6b0ca8b63242dc580ecce = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_1180ac51bca18d06e484be0ac07e4cc4 = $(`<div id="html_1180ac51bca18d06e484be0ac07e4cc4" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473238948.0, 387753996.0</h4></div>`)[0];
+                popup_8110c1862da6b0ca8b63242dc580ecce.setContent(html_1180ac51bca18d06e484be0ac07e4cc4);
+            
+        
+
+        marker_01dc763ec12023bf19eac7c18ddfe491.bindPopup(popup_8110c1862da6b0ca8b63242dc580ecce)
+        ;
+
+        
+    
+    
+            var marker_1f938a510357467b93ed84730f4faa25 = L.marker(
+                [47.323868, 38.7753833],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_704bdf332c13a75105d98fa64f6b1a65 = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_49e7f143597954f4797f818de751b7fe = $(`<div id="html_49e7f143597954f4797f818de751b7fe" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473238680.0, 387753833.0</h4></div>`)[0];
+                popup_704bdf332c13a75105d98fa64f6b1a65.setContent(html_49e7f143597954f4797f818de751b7fe);
+            
+        
+
+        marker_1f938a510357467b93ed84730f4faa25.bindPopup(popup_704bdf332c13a75105d98fa64f6b1a65)
+        ;
+
+        
+    
+    
+            var marker_47970d6c9ea0315d147d8aae23e06121 = L.marker(
+                [47.3238501, 38.7753724],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_3d091d5c430694fd65234592302523dd = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_8e63fc9a359469576f15f786efd56d02 = $(`<div id="html_8e63fc9a359469576f15f786efd56d02" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473238501.0, 387753724.0</h4></div>`)[0];
+                popup_3d091d5c430694fd65234592302523dd.setContent(html_8e63fc9a359469576f15f786efd56d02);
+            
+        
+
+        marker_47970d6c9ea0315d147d8aae23e06121.bindPopup(popup_3d091d5c430694fd65234592302523dd)
+        ;
+
+        
+    
+    
+            var marker_fff90e0fed64f788cae49c108d03d631 = L.marker(
+                [47.3238234, 38.7753561],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_2d6a8773df2ce1232cb9214dc37d7ccc = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_c660de6087bfacec66033f6a1f6925d3 = $(`<div id="html_c660de6087bfacec66033f6a1f6925d3" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473238234.0, 387753561.0</h4></div>`)[0];
+                popup_2d6a8773df2ce1232cb9214dc37d7ccc.setContent(html_c660de6087bfacec66033f6a1f6925d3);
+            
+        
+
+        marker_fff90e0fed64f788cae49c108d03d631.bindPopup(popup_2d6a8773df2ce1232cb9214dc37d7ccc)
+        ;
+
+        
+    
+    
+            var marker_9e5c0fb58796fef09361970d8433f561 = L.marker(
+                [47.3238055, 38.7753452],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_142c2780a9d49d7593333213b51d8739 = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_152a749628ea289ef1be07f01e045733 = $(`<div id="html_152a749628ea289ef1be07f01e045733" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473238055.0, 387753452.0</h4></div>`)[0];
+                popup_142c2780a9d49d7593333213b51d8739.setContent(html_152a749628ea289ef1be07f01e045733);
+            
+        
+
+        marker_9e5c0fb58796fef09361970d8433f561.bindPopup(popup_142c2780a9d49d7593333213b51d8739)
+        ;
+
+        
+    
+    
+            var marker_7ef10f29dfdbaa31feb0bf7a02ef0690 = L.marker(
+                [47.3241222, 38.775544],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_6f08f36605f2bebcf1370d2e69b1b61b = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_eea719f08018df1ec97544f98449dbec = $(`<div id="html_eea719f08018df1ec97544f98449dbec" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473241222.0, 387755440.0</h4></div>`)[0];
+                popup_6f08f36605f2bebcf1370d2e69b1b61b.setContent(html_eea719f08018df1ec97544f98449dbec);
+            
+        
+
+        marker_7ef10f29dfdbaa31feb0bf7a02ef0690.bindPopup(popup_6f08f36605f2bebcf1370d2e69b1b61b)
+        ;
+
+        
+    
+    
+            var marker_a910cf60c80271658f3a88a38c110a0b = L.marker(
+                [47.3241718, 38.7755437],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_7cb5920bbc1f1368b9ba8bdc9958e06d = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_f825fcddbe158f4390a351c04cffb5a8 = $(`<div id="html_f825fcddbe158f4390a351c04cffb5a8" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473241718.0, 387755437.0</h4></div>`)[0];
+                popup_7cb5920bbc1f1368b9ba8bdc9958e06d.setContent(html_f825fcddbe158f4390a351c04cffb5a8);
+            
+        
+
+        marker_a910cf60c80271658f3a88a38c110a0b.bindPopup(popup_7cb5920bbc1f1368b9ba8bdc9958e06d)
+        ;
+
+        
+    
+    
+            var marker_76bd0edb09ea1230d503bea8a705ef9f = L.marker(
+                [47.3242191, 38.7755535],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_6cd2654e69b269607da9437ed1b8e58f = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_7f118d1f90e187f90b7b4d8bb2a6d21d = $(`<div id="html_7f118d1f90e187f90b7b4d8bb2a6d21d" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473242191.0, 387755535.0</h4></div>`)[0];
+                popup_6cd2654e69b269607da9437ed1b8e58f.setContent(html_7f118d1f90e187f90b7b4d8bb2a6d21d);
+            
+        
+
+        marker_76bd0edb09ea1230d503bea8a705ef9f.bindPopup(popup_6cd2654e69b269607da9437ed1b8e58f)
+        ;
+
+        
+    
+    
+            var marker_3fc2d197534944dcf486e3287c199236 = L.marker(
+                [47.3242402, 38.7755572],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_671494435bbfa7a12ead3b70e64b39fb = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_11d3c96b67e1b325d6e14a830c0978e6 = $(`<div id="html_11d3c96b67e1b325d6e14a830c0978e6" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473242402.0, 387755572.0</h4></div>`)[0];
+                popup_671494435bbfa7a12ead3b70e64b39fb.setContent(html_11d3c96b67e1b325d6e14a830c0978e6);
+            
+        
+
+        marker_3fc2d197534944dcf486e3287c199236.bindPopup(popup_671494435bbfa7a12ead3b70e64b39fb)
+        ;
+
+        
+    
+    
+            var marker_f18fcaf3f2d476a2654254ce75564499 = L.marker(
+                [47.3242612, 38.7755648],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_598908c73a158f242edd8656f84900ad = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_a084f1880f6c347769f08d0641ad54ad = $(`<div id="html_a084f1880f6c347769f08d0641ad54ad" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473242612.0, 387755648.0</h4></div>`)[0];
+                popup_598908c73a158f242edd8656f84900ad.setContent(html_a084f1880f6c347769f08d0641ad54ad);
+            
+        
+
+        marker_f18fcaf3f2d476a2654254ce75564499.bindPopup(popup_598908c73a158f242edd8656f84900ad)
+        ;
+
+        
+    
+    
+            var marker_9b0660e2df4d6868d3e228e8b09a0a12 = L.marker(
+                [47.3242769, 38.7755719],
+                {}
+            ).addTo(map_fd70f84247875a0cdb94773f6fb483a0);
+        
+    
+        var popup_a71a5ea22894e3c174b4055a7b6b2d1c = L.popup({"maxWidth": "100%", "minWidth": 200});
+
+        
+            
+                var html_53a79400c6f7e56b29464528667ce3db = $(`<div id="html_53a79400c6f7e56b29464528667ce3db" style="width: 100.0%; height: 100.0%;"><h3>status: </h3><h4>OK</h4><br>                 <h3>Координаты:</h3> <h4>473242769.0, 387755719.0</h4></div>`)[0];
+                popup_a71a5ea22894e3c174b4055a7b6b2d1c.setContent(html_53a79400c6f7e56b29464528667ce3db);
+            
+        
+
+        marker_9b0660e2df4d6868d3e228e8b09a0a12.bindPopup(popup_a71a5ea22894e3c174b4055a7b6b2d1c)
+        ;
+
+        
+    
+</script>
+</html>
